@@ -19,3 +19,11 @@ module Swimmable
   class Dog < Mammal
     include Swimmable         # mixing in Swimmable module
   end
+
+sparky = Dog.new
+neemo  = Fish.new
+paws   = Cat.new
+
+sparky.swim                 # => I'm swimming!
+neemo.swim                  # => I'm swimming!
+paws.swim                   # => NoMethodError: undefined method `swim' for #<Cat:0x007fc453152308>
