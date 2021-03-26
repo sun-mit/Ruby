@@ -1,6 +1,5 @@
 class Person
     
-  
     attr_accessor(:name, :age, :phone_number, :nationality)
     
     def initialize(p_name, p_age, p_phone_number, p_nationality)
